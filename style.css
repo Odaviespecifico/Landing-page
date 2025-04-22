@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --dark-background-color: #1F2937;
+    --quote-background-color: #E5E7EB;
+    --main-text-color: #F9FAF8;
+    --secondary-text-color: #E5E7EB;
+    --button-color: #3882F6;
+    --information-text-color: var(--dark-background-color) /*Weight: 900*/
+    --quote-text-color: var(--dark-background-color)
+}
+
+/* Make outline on the different sections of the website */
+body > * {
+    border-color: red;
+    border-style: solid;
+    border-width: 1px;
+}
+body {
+    display: flex;
+    font-family: Roboto;
+    margin: 0px;
+    flex-direction: column;
+}
+
+/* ------ header ------ */
+.header {
+    background-color: var(--dark-background-color);
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.header ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* ------ Section 1 ------ */
+.section.one {
+    background-color: var(--dark-background-color);
+    color: var(--main-text-color);
+    padding: 5% 10%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+
+}
+
+.one img {
+    height: 300px;
+    width: auto;
+    margin-left: 30px;
+    flex: 1;
+}
+.text.main {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.section.one p {
+    margin: 20px 0;
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    padding: 3px 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    border-color: rgba(red, green, blue, 0);
+}
+
+.text.sub {
+    font-size: 18px;
+    color: var(--secondary-text-color)
+}
+/* Section two */
+.section.three {
+    background-color: var(--quote-background-color);
+}
+
+.section.four {
+    background-color: var(--button-color);
+}
+
+.footer {
+    background-color: var(--dark-background-color);
+}
+
+
+li {
+    list-style-type: none;
+}
