@@ -11,11 +11,11 @@
 }
 
 /* Make outline on the different sections of the website */
-body > * {
+/* body > * {
     border-color: red;
     border-style: solid;
     border-width: 1px;
-}
+} */
 body {
     display: flex;
     font-family: Roboto;
@@ -69,25 +69,117 @@ button {
     padding: 3px 10px;
     font-size: 18px;
     border-radius: 20px;
-    border-color: rgba(red, green, blue, 0);
+    border-style: none;
 }
 
 .text.sub {
     font-size: 18px;
     color: var(--secondary-text-color)
 }
+
 /* Section two */
-.section.three {
-    background-color: var(--quote-background-color);
+.section.two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-wsubtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.image-wsubtext p {
+    text-align: center;
+    width: 0;
+    min-width: 100%;
+    
+}
+
+.image-wsubtext img {
+    border-radius: 10px;
+    height: 200px;
+    width: auto;
+}
+
+/* ---- Section three ---- */
+.section.three {
+    background-color: var(--quote-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.section.three div {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.three q {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.section.three span {
+    text-align: right;
+    font-weight: 900;
+}
+
+/* ---- Section four ---- */
 .section.four {
+    padding: 5% 10%;
+    justify-content: space-between;
+}
+
+.section.four > div {
     background-color: var(--button-color);
+    border-radius: 10px;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section.four button {
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 0 2%;
+    height: 28px;
+}    
+
+.section.four p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.section.four .sub {
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .footer {
     background-color: var(--dark-background-color);
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
+
 
 
 li {
